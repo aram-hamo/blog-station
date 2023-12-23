@@ -2,9 +2,10 @@
 namespace AramHamo\Mvc\Models;
 use AramHamo\MvcCore\Model;
 
-class User extends Model{
+class Articles extends Model{
   public String $_tableName = "articles";
-  public String $title;
+  public int $author_id;
+  public String $article_title;
   public String $tags;
   public String $body;
   public String $in_url;

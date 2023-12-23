@@ -7,7 +7,8 @@ $table = new class {
     $s = new Schema;
     $m = new Migration;
     $m->id();
-    $m->text("title");
+    $m->int("author_id");
+    $m->text("article_title");
     $m->text("tags");
     $m->text("body");
     $m->text("in_url")->unique("in_url");
